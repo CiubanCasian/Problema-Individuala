@@ -1,6 +1,7 @@
 package loose.oose.fis.documents;
 
 import java.util.Arrays;
+import java.lang.Math;
 
 public class JSON extends Document {
     public JSON(String[] continut) {
@@ -26,4 +27,12 @@ public class JSON extends Document {
     public String toString() {
         return "JSON " + super.toString();
     }
+
+	public String newMethod(int x){
+		int max = 10; 
+        	int min = 1; 
+        	int range = max - min + 1;
+		int rand = (int)(Math.random() * range) + min;
+		return this.analizeaza()[rand]; 
+	}
 }
